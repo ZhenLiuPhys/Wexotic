@@ -17,22 +17,27 @@ set run_tag xqcut10_qcut15
 set JetMatching:qCut 15
 0
 # run3
+launch
 set run_tag xqcut10_qcut20
 set JetMatching:qCut 20
 0
 # run4
+launch
 set run_tag xqcut10_qcut25
 set JetMatching:qCut 25
 0
 # run5
+launch
 set run_tag xqcut10_qcut30
 set JetMatching:qCut 30
 0
 # run6
+launch
 set run_tag xqcut10_qcut40
 set JetMatching:qCut 40
 0
 # run7
+launch
 set run_tag xqcut10_qcut50
 set JetMatching:qCut 50
 0
