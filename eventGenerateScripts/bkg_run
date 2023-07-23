@@ -1,0 +1,108 @@
+# ttbar bkg
+generate p p > t t~
+add process p p > t t~ j
+output tt_bkg
+# launch the run
+launch tt_bkg
+shower = Pythia8
+detector = Delphes
+# analysis = ExRoot
+# set parameters
+update to_full
+set run_tag tt_bkg
+set nevents 100000
+set ebeam1 7000
+set ebeam2 7000
+set cut_decays True
+set hard_survey=1
+set sde_strategy=1
+set use_syst=False # avoid delphes bug
+# set cuts
+set ptj 20
+set etaj 5
+set ickkw 1
+set xqcut 12
+set JetMatching:qCut 20
+../MG5_aMC_v3_4_2/Delphes/cards/delphes_card_HLLHC.tcl
+
+
+# WZ bkg
+generate p p > w+ z, w+ > l+ vl, z > l+ l-
+add process p p > w+ z j, w+ > l+ vl, z > l+ l-
+output WZ_bkg
+# launch the run
+launch WZ_bkg
+shower = Pythia8
+detector = Delphes
+# set parameters
+update to_full
+set run_tag WZ_bkg
+set nevents 50000
+set ebeam1 7000
+set ebeam2 7000
+set cut_decays True
+set hard_survey=1
+set sde_strategy=1
+set use_syst=False # avoid delphes bug
+# set cuts
+set ptj 20
+set ptl 10
+set etaj 5
+set etal 5
+set ickkw 1
+set xqcut 12
+set JetMatching:qCut 20
+../MG5_aMC_v3_4_2/Delphes/cards/delphes_card_HLLHC.tcl
+
+
+# ZZ bkg
+generate p p > z z, z > l+ l-, z > l+ l-
+add process p p > z z j, z > l+ l-, z > l+ l-
+output ZZ_bkg
+# launch the run
+launch ZZ_bkg
+shower = Pythia8
+detector = Delphes
+# set parameters
+update to_full
+set run_tag ZZ_bkg
+set nevents 50000
+set ebeam1 7000
+set ebeam2 7000
+set cut_decays True
+set hard_survey=1
+set sde_strategy=1
+set use_syst=False # avoid delphes bug
+# set cuts
+set ptj 20
+set ptl 10
+set etaj 5
+set etal 5
+set ickkw 1
+set xqcut 12
+set JetMatching:qCut 20
+../MG5_aMC_v3_4_2/Delphes/cards/delphes_card_HLLHC.tcl
+
+# h bkg
+convert model /mnt/e/Madgraph/MG5_aMC_v3_4_0/models/heft
+import model heft-full
+generate p p > h, h > l+ l- l+ l-
+output h_bkg
+# launch the run
+launch h_bkg
+shower = Pythia8
+detector = Delphes
+# set parameters
+update to_full
+set run_tag h_bkg
+set nevents 10000
+set ebeam1 7000
+set ebeam2 7000
+set cut_decays True
+set hard_survey=1
+set sde_strategy=1
+set use_syst=False # avoid delphes bug
+# set cuts
+set ptl 10
+set etal 5
+../MG5_aMC_v3_4_2/Delphes/cards/delphes_card_HLLHC.tcl
