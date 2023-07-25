@@ -1,31 +1,25 @@
-generate p p > w+, w+ > l+ l+ l- vl @0
-add process p p > w+ j, w+ > l+ l+ l- vl @1
-output signal
-
+# TTbar bkg
+generate p p > t t~
+add process p p > t t~ j
+output tt_bkg
 # launch the run
-launch signal
+launch tt_bkg
 shower = Pythia8
 detector = Delphes
-analysis = ExRoot
-
+# analysis = ExRoot
 # set parameters
 update to_full
-set run_tag signal1
-set nevents 20000
+set run_tag tt_bkg
+set nevents 100000
 set ebeam1 7000
 set ebeam2 7000
 set cut_decays True
 set hard_survey=1
 set sde_strategy=1
 set use_syst=False # avoid delphes bug
-
 # set cuts
 set ptj 20
-set ptl 10
-set drll 0.2
 set etaj 5
-set etal 5
 set ickkw 1
-set xqcut 12
-set JetMatching:qCut 20
+set xqcut 15
 ../MG5_aMC_v3_4_2/Delphes/cards/delphes_card_HLLHC.tcl
