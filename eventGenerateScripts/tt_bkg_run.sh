@@ -1,4 +1,4 @@
-# TTbar bkg
+# TT bkg
 generate p p > t t~
 add process p p > t t~ j
 output tt_bkg
@@ -10,7 +10,7 @@ detector = Delphes
 # set parameters
 update to_full
 set run_tag tt_bkg
-set nevents 100000
+set nevents 100000 # this should be modified accordingly
 set ebeam1 7000
 set ebeam2 7000
 set cut_decays True

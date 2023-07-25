@@ -8,8 +8,8 @@ shower = Pythia8
 detector = Delphes
 # set parameters
 update to_full
-set run_tag WZ_bkg
-set nevents 50000
+set run_tag w_plus_z_bkg
+set nevents 50000 # this stay at 50000 to normalize
 set ebeam1 7000
 set ebeam2 7000
 set cut_decays True

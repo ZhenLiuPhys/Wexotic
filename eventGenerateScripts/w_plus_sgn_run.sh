@@ -1,18 +1,18 @@
 # W+ signal generation
 generate p p > w+, w+ > l+ l+ l- vl @0
 add process p p > w+ j, w+ > l+ l+ l- vl @1
-output w_plus_signal
+output w_plus_sgn
 
 # launch the run
-launch w_plus_signal
+launch w_plus_sgn
 shower = Pythia8
 detector = Delphes
 analysis = ExRoot
 
 # set parameters
 update to_full
-set run_tag signal1
-set nevents 20000
+set run_tag w_plus_sgn
+set nevents 20000 # this should be modified accordingly
 set ebeam1 7000
 set ebeam2 7000
 set cut_decays True
