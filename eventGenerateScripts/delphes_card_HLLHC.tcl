@@ -1448,7 +1448,7 @@ module Isolation MuonIsolation {
 
   set OutputArray muons
 
-  set DeltaRMax 0.3
+  set DeltaRMax 0.2
 
   set PTMin 0.0
 
