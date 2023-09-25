@@ -19,7 +19,7 @@ set hard_survey=1
 set sde_strategy=1
 set use_syst=False # avoid delphes bug
 # set cuts
-set ptl 10
+set ptl 3
 set etal 5
 set drll 0.2
-../MG5_aMC_v3_4_2/Delphes/cards/delphes_card_HLLHC.tcl
+./delphes_card_HLLHC_update.tcl

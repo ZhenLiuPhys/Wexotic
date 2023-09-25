@@ -20,6 +20,7 @@ output zp_signal
 launch zp_signal
 shower = Pythia8
 detector = Delphes
+analysis = OFF
 set mass 233 1.0
 set width 233 Auto
 update to_full
@@ -32,16 +33,17 @@ set use_syst False
 # set cuts
 set ptj 20
 set ptl 3
-set drll 0.15
+set drll 0.2
 set etaj 5
 set etal 5
 set ickkw 1
 set xqcut 15
-../MG5_aMC_v3_4_2/Delphes/cards/delphes_card_HLLHC.tcl
+./delphes_card_HLLHC_update.tcl
 
 launch zp_signal
 shower = Pythia8
 detector = Delphes
+analysis = OFF
 set mass 233 2.0
 set width 233 Auto
 update to_full
@@ -53,16 +55,17 @@ set cut_decays True
 set use_syst False
 set ptj 20
 set ptl 3
-set drll 0.15
+set drll 0.2
 set etaj 5
 set etal 5
 set ickkw 1
 set xqcut 15
-../MG5_aMC_v3_4_2/Delphes/cards/delphes_card_HLLHC.tcl
+./delphes_card_HLLHC_update.tcl
 
 launch zp_signal
 shower = Pythia8
 detector = Delphes
+analysis = OFF
 set mass 233 5.0
 set width 233 Auto
 update to_full
@@ -74,16 +77,17 @@ set cut_decays True
 set use_syst False
 set ptj 20
 set ptl 3
-set drll 0.15
+set drll 0.2
 set etaj 5
 set etal 5
 set ickkw 1
 set xqcut 15
-../MG5_aMC_v3_4_2/Delphes/cards/delphes_card_HLLHC.tcl
+./delphes_card_HLLHC_update.tcl
 
 launch zp_signal
 shower = Pythia8
 detector = Delphes
+analysis = OFF
 set mass 233 10.0
 set width 233 Auto
 update to_full
@@ -95,16 +99,17 @@ set cut_decays True
 set use_syst False
 set ptj 20
 set ptl 3
-set drll 0.15
+set drll 0.2
 set etaj 5
 set etal 5
 set ickkw 1
 set xqcut 15
-../MG5_aMC_v3_4_2/Delphes/cards/delphes_card_HLLHC.tcl
+./delphes_card_HLLHC_update.tcl
 
 launch zp_signal
 shower = Pythia8
 detector = Delphes
+analysis = OFF
 set mass 233 20.0
 set width 233 Auto
 update to_full
@@ -116,16 +121,17 @@ set cut_decays True
 set use_syst False
 set ptj 20
 set ptl 3
-set drll 0.15
+set drll 0.2
 set etaj 5
 set etal 5
 set ickkw 1
 set xqcut 15
-../MG5_aMC_v3_4_2/Delphes/cards/delphes_card_HLLHC.tcl
+./delphes_card_HLLHC_update.tcl
 
 launch zp_signal
 shower = Pythia8
 detector = Delphes
+analysis = OFF
 set mass 233 30.0
 set width 233 Auto
 update to_full
@@ -137,16 +143,17 @@ set cut_decays True
 set use_syst False
 set ptj 20
 set ptl 3
-set drll 0.15
+set drll 0.2
 set etaj 5
 set etal 5
 set ickkw 1
 set xqcut 15
-../MG5_aMC_v3_4_2/Delphes/cards/delphes_card_HLLHC.tcl
+./delphes_card_HLLHC_update.tcl
 
 launch zp_signal
 shower = Pythia8
 detector = Delphes
+analysis = OFF
 set mass 233 40.0
 set width 233 Auto
 update to_full
@@ -158,16 +165,17 @@ set cut_decays True
 set use_syst False
 set ptj 20
 set ptl 3
-set drll 0.15
+set drll 0.2
 set etaj 5
 set etal 5
 set ickkw 1
 set xqcut 15
-../MG5_aMC_v3_4_2/Delphes/cards/delphes_card_HLLHC.tcl
+./delphes_card_HLLHC_update.tcl
 
 launch zp_signal
 shower = Pythia8
 detector = Delphes
+analysis = OFF
 set mass 233 50.0
 set width 233 Auto
 update to_full
@@ -179,16 +187,17 @@ set cut_decays True
 set use_syst False
 set ptj 20
 set ptl 3
-set drll 0.15
+set drll 0.2
 set etaj 5
 set etal 5
 set ickkw 1
 set xqcut 15
-../MG5_aMC_v3_4_2/Delphes/cards/delphes_card_HLLHC.tcl
+./delphes_card_HLLHC_update.tcl
 
 launch zp_signal
 shower = Pythia8
 detector = Delphes
+analysis = OFF
 set mass 233 60.0
 set width 233 Auto
 update to_full
@@ -200,16 +209,17 @@ set cut_decays True
 set use_syst False
 set ptj 20
 set ptl 3
-set drll 0.15
+set drll 0.2
 set etaj 5
 set etal 5
 set ickkw 1
 set xqcut 15
-../MG5_aMC_v3_4_2/Delphes/cards/delphes_card_HLLHC.tcl
+./delphes_card_HLLHC_update.tcl
 
 launch zp_signal
 shower = Pythia8
 detector = Delphes
+analysis = OFF
 set mass 233 80.0
 set width 233 Auto
 update to_full
@@ -221,9 +231,9 @@ set cut_decays True
 set use_syst False
 set ptj 20
 set ptl 3
-set drll 0.15
+set drll 0.2
 set etaj 5
 set etal 5
 set ickkw 1
 set xqcut 15
-../MG5_aMC_v3_4_2/Delphes/cards/delphes_card_HLLHC.tcl
+./delphes_card_HLLHC_update.tcl

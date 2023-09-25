@@ -9,7 +9,7 @@ detector = Delphes
 # set parameters
 update to_full
 set run_tag zz_bkg
-set nevents 50000
+set nevents 200000
 set ebeam1 7000
 set ebeam2 7000
 set cut_decays True
@@ -18,10 +18,10 @@ set sde_strategy=1
 set use_syst=False # avoid delphes bug
 # set cuts
 set ptj 20
-set ptl 10
+set ptl 3
 set drll 0.2
 set etaj 5
 set etal 5
 set ickkw 1
 set xqcut 15
-../MG5_aMC_v3_4_2/Delphes/cards/delphes_card_HLLHC.tcl
+./delphes_card_HLLHC_update.tcl
